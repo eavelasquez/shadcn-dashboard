@@ -45,9 +45,9 @@ export function CopyButton({
     >
       <span className="sr-only">Copy</span>
       {hasCopied ? (
-        <CheckIcon className="size-3" />
+        <CheckIcon className="size-6" />
       ) : (
-        <CopyIcon className="size-3" />
+        <CopyIcon className="size-6" />
       )}
     </Button>
   );
