@@ -1,4 +1,3 @@
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 import { IconProps } from '@radix-ui/react-icons/dist/types';
 
 export type Icon = React.ForwardRefExoticComponent<
@@ -6,8 +5,6 @@ export type Icon = React.ForwardRefExoticComponent<
 >;
 
 export const Icons = {
-  sun: SunIcon,
-  moon: MoonIcon,
   logo: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
       <path fill="none" d="M0 0h256v256H0z" />
