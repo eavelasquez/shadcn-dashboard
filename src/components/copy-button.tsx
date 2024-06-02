@@ -4,13 +4,18 @@ import { useEffect, useState } from 'react';
 import { CheckIcon, CopyIcon } from '@radix-ui/react-icons';
 
 import { cn, copyToClipboard } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { Button, ButtonProps } from '@/components/ui/button';
 
-interface CopyButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+interface CopyButtonProps extends ButtonProps {
   value: string;
 }
 
-export function CopyButton({ className, value, ...props }: CopyButtonProps) {
+export function CopyButton({
+  className,
+  value,
+  variant = 'ghost',
+  ...props
+}: CopyButtonProps) {
   const [hasCopied, setHasCopied] = useState(false);
 
   useEffect(() => {
@@ -26,9 +31,9 @@ export function CopyButton({ className, value, ...props }: CopyButtonProps) {
   return (
     <Button
       size="icon"
-      variant="ghost"
+      variant={variant}
       className={cn(
-        'relative z-10 size-6 text-zinc-700 hover:bg-zinc-50 hover:text-zinc-700',
+        'relative z-10 size-6 text-zinc-50 hover:bg-zinc-700 hover:text-zinc-50 [&_svg]:size-3',
         className,
       )}
       onClick={(e) => {
