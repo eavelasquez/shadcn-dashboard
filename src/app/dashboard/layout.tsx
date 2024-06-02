@@ -22,13 +22,13 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
               </ScrollArea>
             </aside>
 
-            <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+            <main className="flex h-full flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
               <div className="flex items-center">
                 <h1 className="text-lg font-semibold md:text-2xl">
                   {siteConfig.name} components
                 </h1>
               </div>
-              <div className="flex flex-1 items-center justify-center rounded-lg border-2 border-dashed shadow-sm">
+              <div className="flex flex-1 gap-4 rounded-lg border-2 border-dashed p-4 shadow-sm lg:gap-6 lg:p-6">
                 {children}
               </div>
             </main>
