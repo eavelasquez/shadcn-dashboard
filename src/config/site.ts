@@ -1,18 +1,14 @@
-export type SiteConfig = typeof siteConfig;
-
 export const siteConfig = {
-  name: 'ShadcnUI Dashboard',
+  name: 'shadcn/ui',
   description:
     'Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.',
-  mainNav: [
-    {
-      title: 'Home',
-      href: '/',
-    },
-  ],
+  ogImage: 'https://ui.shadcn.com/og.jpg',
+  url: 'https://ui.shadcn.com',
   links: {
-    twitter: 'https://twitter.com/shadcn',
+    author: 'https://github.com/eavelasquez',
     github: 'https://github.com/shadcn/ui',
-    docs: 'https://ui.shadcn.com',
+    twitter: 'https://twitter.com/shadcn',
   },
 };
+
+export type SiteConfig = typeof siteConfig;
