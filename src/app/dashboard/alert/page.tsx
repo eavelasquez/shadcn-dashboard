@@ -2,7 +2,7 @@ import { ExclamationTriangleIcon, RocketIcon } from '@radix-ui/react-icons';
 
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
-export default function AlertDemo() {
+export default function Page() {
   return (
     <div className="grid gap-3">
       <Alert>
