@@ -15,16 +15,6 @@ export function MainNav() {
           {siteConfig.name}
         </span>
       </Link>
-      <nav className="flex items-center gap-4 text-sm lg:gap-6">
-        <Link
-          href={siteConfig.links.github}
-          className={cn(
-            'hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block',
-          )}
-        >
-          GitHub
-        </Link>
-      </nav>
     </div>
   );
 }
