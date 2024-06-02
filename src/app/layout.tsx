@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
     creator: '@shadcn',
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export const viewport: Viewport = {
